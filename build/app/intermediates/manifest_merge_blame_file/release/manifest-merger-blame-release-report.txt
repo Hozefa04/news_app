@@ -1,0 +1,107 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.mrsoserious.news_app"
+4    android:versionCode="4001"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:4:5-67
+11-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:5:5-79
+12-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:5:22-76
+13
+14    <queries>
+14-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:7:5-13:15
+15
+16        <!-- If your app opens https URLs -->
+17        <intent>
+17-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:9:9-12:18
+18            <action android:name="android.intent.action.VIEW" />
+18-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:10:13-65
+18-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:10:21-62
+19
+20            <data android:scheme="https" />
+20-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:11:13-44
+20-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:11:19-41
+21        </intent>
+22    </queries>
+23
+24    <application
+25        android:name="android.app.Application"
+25-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:17:9-42
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.6.0] C:\Users\mr.SoSerious\.gradle\caches\transforms-2\files-2.1\5f663b08eec19eef9a9d1af662d9025e\core-1.6.0\AndroidManifest.xml:24:18-86
+27        android:icon="@mipmap/ic_launcher"
+27-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:18:9-43
+28        android:label="News App" >
+28-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:16:9-33
+29        <activity
+29-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:20:9-40:20
+30            android:name="com.mrsoserious.news_app.MainActivity"
+30-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:21:13-41
+31            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+31-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:25:13-163
+32            android:exported="true"
+32-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:22:13-36
+33            android:hardwareAccelerated="true"
+33-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:26:13-47
+34            android:launchMode="singleTop"
+34-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:23:13-43
+35            android:theme="@style/LaunchTheme"
+35-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:24:13-47
+36            android:windowSoftInputMode="adjustResize" >
+36-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:27:13-55
+37
+38            <!--
+39                 Specifies an Android theme to apply to this Activity as soon as
+40                 the Android process has started. This theme is visible to the user
+41                 while the Flutter UI initializes. After that, this theme continues
+42                 to determine the Window background behind the Flutter UI.
+43            -->
+44            <meta-data
+44-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:32:13-35:17
+45                android:name="io.flutter.embedding.android.NormalTheme"
+45-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:33:15-70
+46                android:resource="@style/NormalTheme" />
+46-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:34:15-52
+47
+48            <intent-filter>
+48-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:36:13-39:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:37:17-68
+49-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:37:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:38:17-76
+51-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:38:27-74
+52            </intent-filter>
+53        </activity>
+54        <!--
+55             Don't delete the meta-data below.
+56             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+57        -->
+58        <meta-data
+58-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:43:9-45:33
+59            android:name="flutterEmbedding"
+59-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:44:13-44
+60            android:value="2" />
+60-->D:\AndroidStudioWorkspace\news_app\android\app\src\main\AndroidManifest.xml:45:13-30
+61
+62        <activity
+62-->[:url_launcher_android] D:\AndroidStudioWorkspace\news_app\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:8:9-11:74
+63            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+63-->[:url_launcher_android] D:\AndroidStudioWorkspace\news_app\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:9:13-74
+64            android:exported="false"
+64-->[:url_launcher_android] D:\AndroidStudioWorkspace\news_app\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:10:13-37
+65            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+65-->[:url_launcher_android] D:\AndroidStudioWorkspace\news_app\build\url_launcher_android\intermediates\library_manifest\release\AndroidManifest.xml:11:13-71
+66    </application>
+67
+68</manifest>
